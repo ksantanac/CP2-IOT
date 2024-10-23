@@ -1,0 +1,104 @@
+[
+    {
+        "id": "e747bdb40d4af223",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "mqtt-in",
+        "type": "mqtt in",
+        "z": "e747bdb40d4af223",
+        "name": "Receber dados do Arduino Cloud",
+        "topic": "temperature",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "b4f0039845804e4b",
+        "nl": false,
+        "rap": false,
+        "inputs": 0,
+        "x": 430,
+        "y": 200,
+        "wires": [
+            [
+                "1dfee2072a81a047"
+            ]
+        ]
+    },
+    {
+        "id": "1dfee2072a81a047",
+        "type": "ui_gauge",
+        "z": "e747bdb40d4af223",
+        "name": "",
+        "group": "fd5da54684a92703",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "gauge",
+        "label": "units",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "50",
+        "colors": [
+            "#b61d0c",
+            "#e6e600",
+            "#60cb3a"
+        ],
+        "seg1": "30",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 710,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "b4f0039845804e4b",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "test.mosquitto.org",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "fd5da54684a92703",
+        "type": "ui_group",
+        "name": "Temperatura",
+        "tab": "9cae7e5f7fa49414",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "9cae7e5f7fa49414",
+        "type": "ui_tab",
+        "name": "Temperatura",
+        "icon": "whatshot",
+        "disabled": false,
+        "hidden": false
+    }
+]

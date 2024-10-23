@@ -7,6 +7,7 @@ Este projeto utiliza duas placas ESP32 e um sensor de temperatura DHT22 para med
 - Gustavo René dias Boamorte - RM551288 
 - João Pedro Costa Feitosa - RM98442 
 - Pedro Felipe Barros da Silva - RM98093 
+- Igor Miguel Silva - RM99495
 
 ## Arquitetura
 
